@@ -17,7 +17,7 @@ const getFolderName = (rootfolder) => {
 
 const deleteFolder = (folderPath) => {
   if (fs.existsSync(folderPath)) {
-    fs.rmSync(folderPath, { recursive: true, force: true });
+    fs.rmdirSync(folderPath, { recursive: true, force: true });
   }
 };
 
